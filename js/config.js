@@ -18,5 +18,7 @@ const STORE_CONFIG = {
   advancePercentage: 50,
   currency: "₹",
   pickupAvailable: true,
-  deliveryAvailable: true
+  deliveryAvailable: true,
+     emailOrders: true,
+   web3formsKey: "5b60a812-e0c1-477d-9f0c-28d3d217e1d1",
 };
