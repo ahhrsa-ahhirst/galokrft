@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Glowcraft – Custom Neon Signs, Name Plates & Business Signs</title>
+<meta name="description" content="Local custom sign & personalization studio: custom neon signs, LED name plates, shop name boards, acrylic signs and custom gifts. Pickup or delivery, pay by UPI or cash.">
+<meta property="og:title" content="Glowcraft – Custom Neon, Name Plates & Business Signs"><meta property="og:description" content="Your Name. Your Brand. Made to Glow."><meta property="og:type" content="website">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Orbitron:wght@600&family=Satisfy&family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>body{font-family:Inter,system-ui,sans-serif;background:#faf9f7;color:#171717;padding-bottom:env(safe-area-inset-bottom)}
+.glow{color:#fff;text-shadow:0 0 6px #ff2e93,0 0 20px #ff2e93,0 0 40px #ff2e93}
+.wall{display:flex;min-height:130px;align-items:center;justify-content:center;background:#0d0d12;padding:16px;text-align:center;word-break:break-word}
+:focus-visible{outline:2px solid #e11d74;outline-offset:2px}dialog::backdrop{background:#0008}</style>
+<style type="text/tailwindcss">@layer components{
+.btn{@apply inline-block cursor-pointer rounded-xl bg-[#e11d74] px-5 py-2.5 text-sm font-semibold text-white transition hover:opacity-90 active:scale-95}
+.btn2{@apply border border-neutral-300 bg-transparent text-neutral-900 hover:bg-neutral-100}
+.btn-g{@apply bg-green-600}
+.inp{@apply w-full rounded-xl border border-neutral-300 bg-white px-3 py-2.5 outline-none focus:border-[#e11d74]}
+.lbl{@apply mb-1 mt-3 block text-sm font-semibold}
+.tag{@apply whitespace-nowrap rounded-full border border-neutral-300 px-2.5 py-0.5 text-xs}
+.chip{@apply cursor-pointer rounded-lg border border-neutral-300 bg-white px-3 py-2 text-sm}
+.chip[aria-pressed=true]{@apply border-[#e11d74] bg-[#e11d74] text-white}
+.card{@apply rounded-2xl border border-neutral-200 bg-white p-4 shadow-sm}}</style></head>
+<body>
+<div id="demo"></div>
+<header class="sticky top-0 z-30 border-b border-neutral-200 bg-white/95"><div class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3">
+<a href="#/" class="text-xl font-bold">Glow<span class="text-[#e11d74]">craft</span></a>
+<nav aria-label="Main" class="hidden items-center gap-5 text-sm md:flex"><a href="#/">Home</a><a href="#/shop">Shop</a><a href="#/shop">Categories</a><a href="#/custom">Custom Order</a><a href="#/bulk">Bulk Orders</a><a href="#/about">About</a><a href="#/contact">Contact</a></nav>
+<div class="hidden items-center gap-3 md:flex"><a class="btn btn-g" id="wtop" target="_blank" rel="noopener">WhatsApp</a><a class="btn btn2" href="#/cart">Cart (<span class="cc">0</span>)</a></div></div></header>
+<main id="app" class="min-h-[60vh]"></main><footer id="foot"></footer>
+<nav aria-label="Mobile" class="fixed inset-x-0 bottom-0 z-30 grid grid-cols-4 border-t border-neutral-200 bg-white text-center text-xs md:hidden" style="padding-bottom:env(safe-area-inset-bottom)">
+<a class="py-3" href="#/">🏠<br>Home</a><a class="py-3" href="#/shop">🛍<br>Shop</a><a class="py-3" href="#/cart">🛒<br>Cart (<span class="cc">0</span>)</a><a class="py-3 text-green-700" id="wbot" target="_blank" rel="noopener">💬<br>WhatsApp</a></nav>
+<div id="toasts" aria-live="polite"></div>
+<dialog id="cd" class="rounded-2xl p-6"><p id="cm" class="mb-4 font-semibold"></p><form method="dialog" class="flex justify-end gap-2"><button class="btn btn2">Cancel</button><button class="btn" value="ok" onclick="$('#cd').close();_cb&&_cb()">Confirm</button></form></dialog>
+<dialog id="dlg" class="w-[min(95vw,640px)] rounded-2xl p-5"></dialog>
+<script src="js/config.js"></script><script src="js/products.js"></script><script src="js/app.js"></script>
+</body></html>
